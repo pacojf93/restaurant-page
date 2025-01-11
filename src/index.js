@@ -5,16 +5,18 @@ import { aboutContent } from "./modules/about"
 
 document.querySelector("#content").appendChild(homeContent())
 
-document.addEventListener("click", function (event) {
-    Array.from(document.querySelectorAll("#content > *")).forEach(child => child.remove())
+document.addEventListener("click", function (event) {   
     switch(event.target.id){
         case "home-button":
+            Array.from(document.querySelectorAll("#content > *")).forEach(child => child.remove())
             document.querySelector("#content").appendChild(homeContent())
             break
         case "menu-button":
+            Array.from(document.querySelectorAll("#content > *")).forEach(child => child.remove())
             document.querySelector("#content").appendChild(menuContent())
             break
         case "about-button":
+            Array.from(document.querySelectorAll("#content > *")).forEach(child => child.remove())
             document.querySelector("#content").appendChild(aboutContent())
             break
     }

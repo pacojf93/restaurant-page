@@ -7,8 +7,14 @@ import menu6 from "../images/menu-6.jpg"
 
 const menuContent = function () {
     const menuImages = [menu1, menu2, menu3, menu4, menu5, menu6]
+
     const menu = document.createElement("div")
     menu.id = "menu-content"
+
+    const title = document.createElement("h2")
+    title.textContent = "Menu"
+    menu.appendChild(title)
+
     menuImages.forEach(function (image, index) {
         let imageElement = document.createElement("img")
         imageElement.src = image
