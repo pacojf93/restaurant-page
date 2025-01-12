@@ -5,13 +5,13 @@ const homeContent = function () {
     home.id = "home-content"
 
     const title = document.createElement("h1")
-    title.textContent = "A Mock-up Sushi Place"
+    title.textContent = "A Mockup Sushi Place"
     home.appendChild(title)
 
     const image = document.createElement("img")
     image.src = homeImage
     image.id = "home-image"
-    image.style.height = "75vh"
+    image.style.height = "100vh"
     home.appendChild(image)
     
     return home
